@@ -18,21 +18,23 @@
     .container {
       display: flex;
       flex-direction: row;
-      height: 100vh;
+      min-height: 100vh;
       align-items: center;
       justify-content: center;
       gap: 40px;
+      padding: 24px;
     }
     .left {
-      flex: 0 0 480px;
+      flex: 0 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-width: 320px;
+      min-width: 220px;
     }
     .left img {
-      width: 480px;
-      height: 480px;
+      width: clamp(180px, 36vw, 480px);
+      max-width: 100%;
+      height: auto;
       border-radius: 16px;
       object-fit: cover;
       box-shadow: 0 2px 18px rgba(0,0,0,0.08);
@@ -56,6 +58,8 @@
       display: flex;
       flex-direction: row;
       gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .link-box {
       background: #fff;
@@ -81,7 +85,7 @@
       display: flex;
       width: 100%;
       justify-content: center;
-      gap: 87px;
+      gap: clamp(16px, 20vw, 87px);
       font-size: 1.08rem;
       font-weight: 600;
       margin-bottom: 0px;
