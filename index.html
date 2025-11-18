@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glockenkemper Home</title>
+  <title>Glockenkemper.com</title>
   <style>
     html, body {
       height: 100%;
@@ -76,12 +76,53 @@
       color: #003a8c;
       border-color: #c6e0ff;
     }
+
+    .arrow-labels {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 87px;
+      font-size: 1.08rem;
+      font-weight: 600;
+      margin-bottom: 0px;
+      margin-top: 8px;
+      color: #1c3a7a;
+      letter-spacing: 0.01em;
+    }
+    .arrow-desc {
+      text-align: center;
+      width: 120px;
+      white-space: normal;
+      word-break: break-word;
+      line-height: 1.05;
+    }
+
     @media (max-width: 800px) {
       .container { flex-direction: column; gap: 0; }
       .left, .right { flex: unset; }
-      .left { margin-top: 40px; }
-      .right { margin: 40px 0; }
-      .boxes { flex-direction: column; gap: 16px; }
+      .left { margin-top: 24px; }
+      .right { margin: 28px 0 0 0; }
+      .boxes { flex-direction: column; gap: 16px; align-items: center; }
+      .arrow-labels {
+        gap: 56px !important;
+        font-size: 1rem;
+        flex-direction: row;
+        margin-bottom: 0px !important;
+      }
+      .arrow-desc { font-size: 0.98em !important; }
+    }
+    @media (max-width: 500px) {
+      .container { padding: 7vw 0; }
+      .left img { width: 150px; height: 150px; }
+      .boxes { gap: 11px; }
+      .link-box {
+        padding: 22px 8vw;
+        font-size: 0.98rem;
+      }
+      .arrow-labels {
+        gap: 20vw !important;
+        font-size: 0.91rem !important;
+      }
     }
   </style>
 </head>
@@ -89,11 +130,14 @@
   <div class="container">
     <div class="left">
       <!-- Use your image here -->
-      <img src="img/ghost.png" alt="Your Photo">
+      <img src="img/ghost.png" alt="Glockenkemper Logo">
     </div>
     <div class="right">
-      <svg class="arrow" viewBox="0 0 24 24"><path fill="#3366cc" d="M12 4v13.17l-4.88-4.88-1.42 1.42L12 21l6.3-6.3-1.42-1.42L12 17.17V4z"/></svg>
-      <div style="display:flex; gap:70px;">
+      <div class="arrow-labels">
+        <span class="arrow-desc printables-label">My Sick 3D Prints</span>
+        <span class="arrow-desc youtube-label">Match Footage</span>
+      </div>
+      <div style="display:flex; gap:70px; align-items: flex-end; justify-content: center;">
         <svg class="arrow" style="transform:rotate(-30deg)" viewBox="0 0 24 24"><path fill="#3366cc" d="M12 4v13.17l-4.88-4.88-1.42 1.42L12 21l6.3-6.3-1.42-1.42L12 17.17V4z"/></svg>
         <svg class="arrow" style="transform:rotate(30deg)" viewBox="0 0 24 24"><path fill="#3366cc" d="M12 4v13.17l-4.88-4.88-1.42 1.42L12 21l6.3-6.3-1.42-1.42L12 17.17V4z"/></svg>
       </div>
