@@ -54,11 +54,6 @@
       gap: 20px;
       position: relative;
     }
-    .arrow {
-      width: 40px;
-      height: 40px;
-      margin-bottom: 16px;
-    }
     .boxes {
       display: flex;
       flex-direction: row;
@@ -86,18 +81,6 @@
       border-color: #000000;
     }
 
-    .arrow-labels {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      gap: clamp(16px, 20vw, 87px);
-      font-size: 1.08rem;
-      font-weight: 600;
-      margin-bottom: 0px;
-      margin-top: 8px;
-      color: #000000;
-      letter-spacing: 0.01em;
-    }
 
     .site-title {
       font-size: clamp(28px, 6vw, 64px);
@@ -117,12 +100,10 @@
       margin: 8px 0 18px 0;
       font-weight: 400;
     }
-    .arrow-desc {
+    .page-header {
+      width: 100%;
       text-align: center;
-      width: 120px;
-      white-space: normal;
-      word-break: break-word;
-      line-height: 1.05;
+      padding: 28px 12px 8px 12px;
     }
 
     @media (max-width: 800px) {
@@ -155,13 +136,16 @@
   </style>
 </head>
 <body>
+  <header class="page-header">
+    <h1 class="site-title">GLOCKENKEMPER.com</h1>
+  </header>
+
   <div class="container">
     <div class="left">
       <!-- Use your image here -->
       <img src="img/ghost.png" alt="Glockenkemper Logo">
     </div>
     <div class="right">
-      <h1 class="site-title">GLOCKENKEMPER.com</h1>
       <div class="welcome-text">
         <p>Welcome to Glockenkemper.com. Click the links below to see my IDPA / USPSA / IPSC match footage (YouTube) and my 3D prints on Printables. I appreciate you checking out my stuff - hit me up @glockenkemper on YouTube!</p>
         <p>--John "Glock"enkemper</p>
