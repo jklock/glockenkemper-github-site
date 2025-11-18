@@ -111,7 +111,8 @@
     .page-header {
       width: 100%;
       text-align: center;
-      padding: 28px 12px 8px 12px;
+      padding: 12px 12px 6px 12px;
+      margin-bottom: 6px;
     }
 
     @media (max-width: 900px) {
@@ -123,10 +124,12 @@
     @media (max-width: 600px) {
       .container { flex-direction: column; align-items: center; padding: 6vw 4vw; }
       .left { width: 72%; max-width: 320px; }
-      .right { width: 100%; padding-top: 12px; }
+      .right { width: 100%; padding-top: 8px; }
       .site-title { font-size: clamp(20px, 7vw, 40px); }
-      .link-box { padding: 16px 8vw; font-size: 1rem; }
+      .link-box { padding: 12px 6px; font-size: 1rem; }
       .welcome-text { font-size: clamp(13px, 3.4vw, 16px); }
+      .boxes { flex-direction: row !important; justify-content: space-between; gap: 8px; }
+      .link-box { flex: 1 1 48%; max-width: 48%; }
     }
   </style>
 </head>
